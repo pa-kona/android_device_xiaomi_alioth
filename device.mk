@@ -93,6 +93,12 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.lpa=true \
     persist.vendor.bt.a2dp.aac_whitelist=false
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.hardware.power.idle_cur_ma=6 \
+    bluetooth.hardware.power.operating_voltage_mv=3700 \
+    bluetooth.hardware.power.rx_cur_ma=28 \
+    bluetooth.hardware.power.tx_cur_ma=36
+
 # Boot
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
