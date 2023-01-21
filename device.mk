@@ -164,6 +164,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
     debug.force_no_blanking=true \
+    debug.sf.treat_170m_as_sRGB=1 \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
