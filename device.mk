@@ -167,6 +167,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.treat_170m_as_sRGB=1 \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
+    vendor.display.enable_hdr10_gpu_target=1 \
     vendor.display.qdcm.mode_combine=1 \
     vendor.display.defer_fps_frame_count=2
 
