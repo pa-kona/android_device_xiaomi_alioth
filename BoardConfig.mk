@@ -28,6 +28,10 @@ AB_OTA_PARTITIONS := \
     vendor_boot \
     vendor
 
+# Disable sparse for ext/f2fs images
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
