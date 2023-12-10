@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -269,6 +273,7 @@ PRODUCT_PACKAGES += \
     AliothSystemUI \
     AOSPAAliothFrameworks \
     AOSPAAliothSystemUI \
+    AvoidAppsInCutoutOverlay \
     SettingsOverlayM2012K11AG \
     SettingsOverlayM2012K11AI \
     SettingsProviderM2012K11AC \
