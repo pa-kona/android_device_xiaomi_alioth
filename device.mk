@@ -211,6 +211,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.alioth.rc \
+    init.alioth.perf.rc \
     init.mi.btmac.sh \
     init.mi.usb.sh \
     init.qti.dcvs.sh \
