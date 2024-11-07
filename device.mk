@@ -74,9 +74,6 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
@@ -160,6 +157,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiDolby \
+    XiaomiParts
 
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
@@ -266,6 +268,7 @@ PRODUCT_PACKAGES += \
     AliothSettings \
     AliothSystemUI \
     AOSPAAliothFrameworks \
+    AOSPAAliothSettingsOverlay \
     AOSPAAliothSystemUI \
     AvoidAppsInCutoutOverlay \
     FrameworksResTarget \
